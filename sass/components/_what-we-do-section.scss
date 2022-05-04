@@ -1,7 +1,12 @@
 /* =================== СЕКЦІЯ ЧЕМ МЫ ЗАНИМАЕМСЯ ==================== */
 
 .promo {
-  padding-top: 0;
+  display: none;
+
+  @include mq(desktop) {
+    padding-top: 0;
+    display: block;
+  }
 }
 
 .promo__list {

@@ -20,9 +20,9 @@
   }
 
   @include mq(desktop) {
-    display: flex;
+    // display: flex;
     align-items: center;
-    margin-right: -30px;
+    // margin-right: -30px;
   }
 }
 
