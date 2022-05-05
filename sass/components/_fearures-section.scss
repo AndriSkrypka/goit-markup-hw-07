@@ -29,6 +29,9 @@
 .feature-subheadings {
   @include mq(mobile-only) {
     margin-bottom: 30px;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   @include mq(tablet) {

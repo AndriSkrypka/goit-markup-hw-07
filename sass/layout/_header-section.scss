@@ -25,6 +25,12 @@
   }
 }
 
+.menu {
+  @include mq(tablet) {
+    display: flex;
+  }
+}
+
 /* Стиль для футера і хедера  */
 
 .logo {
@@ -46,6 +52,10 @@
 
 .header-logo {
   @include mq(tablet) {
+    margin-right: 88px;
+  }
+
+  @include mq(desktop) {
     margin-right: 93px;
   }
 }
@@ -115,22 +125,31 @@
   display: none;
 
   @include mq(tablet) {
-    align-items: center;
     margin-left: auto;
     display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  @include mq(desktop) {
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
   }
 }
 
-.contacts__list:not(:first-child) {
-  margin-left: 50px;
-}
+// .contacts__list:not(:first-child) {
+//   @include mq(desktop) {
+//     margin-left: 50px;
+//   }
+// }
 
 .contacts__link {
   display: inline-flex;
   align-items: center;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.15;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--main-text-color2);
 
@@ -141,6 +160,11 @@
   &:hover,
   &:focus {
     color: var(--accent-color);
+  }
+
+  @include mq(desktop) {
+    font-size: 14px;
+    line-height: 1.14;
   }
 }
 
@@ -154,6 +178,16 @@
 
   .contacts__link:hover & {
     fill: var(--accent-color);
+  }
+  @include mq(desktop) {
+    &--mail {
+      width: 16px;
+      height: 12px;
+    }
+    &--tell {
+      width: 10px;
+      height: 16px;
+    }
   }
 }
 
@@ -169,6 +203,13 @@
 
   @include mq(tablet) {
     display: none;
+  }
+}
+
+.mobile-btn__icon {
+  .mobile-btn:hover &,
+  .mobile-btn:focus & {
+    fill: #2196f3;
   }
 }
 
@@ -228,6 +269,10 @@
   @media screen and (max-width: 479px) {
     font-size: 30px;
   }
+}
+
+.link--current {
+  color: var(--accent-color);
 }
 
 .mobile-menu__contact-link {
