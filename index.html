@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ДЗ goit-markup-hw-07 Скрипка Андрій</title>
+    <title>ДЗ goit-markup-hw-08 Скрипка Андрій</title>
     <meta lang="en" name="author" content="Andrii Srypka" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -234,33 +234,64 @@
           <ul class="promo__list list">
             <li class="promo__item">
               <p class="promo__text">Десктопные приложения</p>
-              <img
-                class="promo__foto"
-                src="./images/what-we-do/what-we-do-squoosh/programmin.jpg"
-                alt="процесс программирование"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <!-- Desktop pictures -->
+                <source
+                  srcset="
+                    ./images/what-we-do/what-we-do-desktop-img@1x1.jpg 1x,
+                    ./images/what-we-do/what-we-do-desktop-img@2x1.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpg"
+                />
+                <img
+                  class="promo__foto"
+                  src="./images/what-we-do/what-we-do-desktop-img@1x1.jpg"
+                  alt="процесс программирование"
+                  width="370"
+                  height="294"
+                />
+              </picture>
             </li>
             <li class="promo__item">
               <p class="promo__text">Мобильные приложения</p>
-              <img
-                class="promo__foto"
-                src="./images/what-we-do/what-we-do-squoosh/developing-sirv-on-smartphone.jpg"
-                alt=" процесс розработка сайтов"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/what-we-do/what-we-do-desktop-img@1x2.jpg  1x,
+                    ./images/what-we-do/what-we-do-desktop-img@2x-2.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpg"
+                />
+                <img
+                  class="promo__foto"
+                  src="./images/what-we-do/what-we-do-desktop-img@1x2.jpg"
+                  alt=" процесс розработка сайтов"
+                  width="370"
+                  height="294"
+                />
+              </picture>
             </li>
             <li class="promo__item">
               <p class="promo__text">Дизайнерские решения</p>
-              <img
-                class="promo__foto"
-                src="./images/what-we-do/what-we-do-squoosh/photo-editing.jpg"
-                alt="процесс обработкы фото"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/what-we-do/what-we-do-desktop-img@1x3.jpg  1x,
+                    ./images/what-we-do/what-we-do-desktop-img@2x-3.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpg"
+                />
+                <img
+                  class="promo__foto"
+                  src="./images/what-we-do/what-we-do-desktop-img@1x3.jpg"
+                  alt="процесс обработкы фото"
+                  width="370"
+                  height="294"
+                />
+              </picture>
             </li>
           </ul>
         </div>
@@ -271,13 +302,43 @@
           <h2 class="title">Наша команда</h2>
           <ul class="employees-list list">
             <li class="employees-list-item">
-              <img
-                class="employees-list-img"
-                src="./images/our-team/team-squoosh/Igor.jpg"
-                alt="Игорь Демьяненко"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <!-- Desktop pictures -->
+                <source
+                  srcset="
+                    ./images/our-team/desktop-img@1x-1.jpg 1x,
+                    ./images/our-team/desktop-img@2x-1.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpg"
+                />
+                <!-- Tablet pictures -->
+                <source
+                  srcset="
+                    ./images/our-team/tablet-img-@1x-1.jpg 1x,
+                    ./images/our-team/tablet-@2x-1.jpg     2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpg"
+                />
+                <!-- Mobile pictures -->
+                <source
+                  srcset="
+                    ./images/our-team/mobile@1x-1.jpg     1x,
+                    ./images/our-team/mobile-img@2x-1.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/jpg"
+                />
+                <!-- Default picture -->
+                <img
+                  class="employees-list-img"
+                  src="./images/our-team/mobile@1x-1.jpg"
+                  alt="Игорь Демьяненко"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="div-list-item">
                 <h3 class="employees-list-name">Игорь Демьяненко</h3>
                 <p class="employees-list-position" lang="en">Product Designer</p>
@@ -310,13 +371,41 @@
               </div>
             </li>
             <li class="employees-list-item">
-              <img
-                class="employees-list-img"
-                src="./images/our-team/team-squoosh/olga.jpg"
-                alt="Ольга Репина"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/our-team/desktop-img@1x-2.jpg 1x,
+                    ./images/our-team/desktop-img@2x-2.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpg"
+                />
+
+                <source
+                  srcset="
+                    ./images/our-team/tablet-img-@1x-2.jpg 1x,
+                    ./images/our-team/tablet-@2x-2.jpg     2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpg"
+                />
+
+                <source
+                  srcset="
+                    ./images/our-team/mobile@1x-2.jpg     1x,
+                    ./images/our-team/mobile-img@2x-2.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/jpg"
+                />
+                <img
+                  class="employees-list-img"
+                  src="./images/our-team/mobile@1x-2.jpg"
+                  alt="Ольга Репина"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="div-list-item">
                 <h3 class="employees-list-name">Ольга Репина</h3>
                 <p class="employees-list-position" lang="en">Frontend Developer</p>
@@ -349,13 +438,41 @@
               </div>
             </li>
             <li class="employees-list-item">
-              <img
-                class="employees-list-img"
-                src="./images/our-team/team-squoosh/nikolai.jpg"
-                alt="Николай Тарасов"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/our-team/desktop-img@1x-3.jpg 1x,
+                    ./images/our-team/desktop-img@2x-3.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpg"
+                />
+                <!-- Tablet pictures -->
+                <source
+                  srcset="
+                    ./images/our-team/tablet-img-@1x-3.jpg 1x,
+                    ./images/our-team/tablet-@2x-3.jpg     2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpg"
+                />
+                <!-- Mobile pictures -->
+                <source
+                  srcset="
+                    ./images/our-team/mobile@1x-3.jpg     1x,
+                    ./images/our-team/mobile-img@2x-3.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/jpg"
+                />
+                <img
+                  class="employees-list-img"
+                  src="./images/our-team/mobile@1x-3.jpg"
+                  alt="Николай Тарасов"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="div-list-item">
                 <h3 class="employees-list-name">Николай Тарасов</h3>
                 <p class="employees-list-position" lang="en">Marketing</p>
@@ -388,13 +505,41 @@
               </div>
             </li>
             <li class="employees-list-item">
-              <img
-                class="employees-list-img"
-                src="./images/our-team/team-squoosh/mihail.jpg"
-                alt="Михаил Ермаков"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/our-team/desktop-img@1x-4.jpg 1x,
+                    ./images/our-team/desktop-img@2x-4.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpg"
+                />
+                <!-- Tablet pictures -->
+                <source
+                  srcset="
+                    ./images/our-team/tablet-img-@1x-4.jpg 1x,
+                    ./images/our-team/tablet-@2x-4.jpg     2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpg"
+                />
+                <!-- Mobile pictures -->
+                <source
+                  srcset="
+                    ./images/our-team/mobile@1x-4.jpg     1x,
+                    ./images/our-team/mobile-img@2x-4.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/jpg"
+                />
+                <img
+                  class="employees-list-img"
+                  src="./images/our-team/mobile@1x-4.jpg"
+                  alt="Михаил Ермаков"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="div-list-item">
                 <h3 class="employees-list-name">Михаил Ермаков</h3>
                 <p class="employees-list-position" lang="en">UI Designer</p>

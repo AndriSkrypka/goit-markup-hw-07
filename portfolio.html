@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ДЗ goit-markup-hw-07 Скрипка Андрій</title>
+    <title>ДЗ goit-markup-hw-08 Скрипка Андрій</title>
     <meta lang="en" name="author" content="Andrii Srypka" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -134,13 +134,39 @@
             <li class="employees-list-ptojekt">
               <a class="hover-link link" href="#">
                 <div class="employees-deskr">
-                  <img
-                    class="employees-list-img"
-                    src="./images/portfolio/technoquack.jpg"
-                    alt="Технокряк"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop-img@1x-1.jpg 1x,
+                        ./images/portfolio/desktop-img@2x-1.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet-img-@1x-1.jpg 1x,
+                        ./images/portfolio/tablet-img@2x-1.jpg  2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile-img-@1x-1.jpg 1x,
+                        ./images/portfolio/mobile-img@2x-1.jpg  2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpg"
+                    />
+                    <img
+                      class="employees-list-img"
+                      src="./images/portfolio/mobile-img-@1x-1.jpg"
+                      alt="Технокряк"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="employees-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -156,13 +182,39 @@
             <li class="employees-list-ptojekt">
               <a class="hover-link link" href="#"
                 ><div class="employees-deskr">
-                  <img
-                    class="employees-list-img"
-                    src="./images/portfolio/poster-new-orlean-vs-golden-star.jpg"
-                    alt="Постер New Orlean vs Golden Star"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop-img@1x-2.jpg 1x,
+                        ./images/portfolio/desktop-img@2x-2.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet-img-@1x-2.jpg 1x,
+                        ./images/portfolio/tablet-img@2x-2.jpg  2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile-img-@1x-2.jpg 1x,
+                        ./images/portfolio/mobile-img@2x-2.jpg  2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpg"
+                    />
+                    <img
+                      class="employees-list-img"
+                      src="./images/portfolio/mobile-img-@1x-2.jpg"
+                      alt="Постер New Orlean vs Golden Star"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="employees-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -178,13 +230,39 @@
             <li class="employees-list-ptojekt">
               <a class="hover-link link" href="#"
                 ><div class="employees-deskr">
-                  <img
-                    class="employees-list-img"
-                    src="./images/portfolio/restaurant-seafood.jpg"
-                    alt="Ресторан Seafood"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop-img@1x-3.jpg 1x,
+                        ./images/portfolio/desktop-img@2x-3.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet-img-@1x-3.jpg 1x,
+                        ./images/portfolio/tablet-img@2x-3.jpg  2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile-img-@1x-3.jpg 1x,
+                        ./images/portfolio/mobile-img@2x-3.jpg  2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpg"
+                    />
+                    <img
+                      class="employees-list-img"
+                      src="./images/portfolio/mobile-img-@1x-3.jpg"
+                      alt="Ресторан Seafood"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="employees-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -200,13 +278,39 @@
             <li class="employees-list-ptojekt">
               <a class="hover-link link" href=""
                 ><div class="employees-deskr">
-                  <img
-                    class="employees-list-img"
-                    src="./images/portfolio/project-prime.jpg"
-                    alt="Проект Prime"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop-img@1x-4.jpg 1x,
+                        ./images/portfolio/desktop-img@2x-4.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet-img-@1x-4.jpg 1x,
+                        ./images/portfolio/tablet-img@2x-4.jpg  2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile-img-@1x-4.jpg 1x,
+                        ./images/portfolio/mobile-img@2x-4.jpg  2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpg"
+                    />
+                    <img
+                      class="employees-list-img"
+                      src="./images/portfolio/mobile-img-@1x-4.jpg"
+                      alt="Проект Prime"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="employees-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -222,13 +326,39 @@
             <li class="employees-list-ptojekt">
               <a class="hover-link link" href="#"
                 ><div class="employees-deskr">
-                  <img
-                    class="employees-list-img"
-                    src="./images/portfolio/project-boxes.jpg"
-                    alt="Проект Boxes"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop-img@1x-5.jpg 1x,
+                        ./images/portfolio/desktop-img@2x-5.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet-img-@1x-5.jpg 1x,
+                        ./images/portfolio/tablet-img@2x-5.jpg  2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile-img-@1x-5.jpg 1x,
+                        ./images/portfolio/mobile-img@2x-5.jpg  2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpg"
+                    />
+                    <img
+                      class="employees-list-img"
+                      src="./images/portfolio/mobile-img-@1x-5.jpg"
+                      alt="Проект Boxes"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="employees-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -244,13 +374,39 @@
             <li class="employees-list-ptojekt">
               <a class="hover-link link" href="#"
                 ><div class="employees-deskr">
-                  <img
-                    class="employees-list-img"
-                    src="./images/portfolio/insplration-has-no-borders.jpg"
-                    alt="Inspiration has no Borders"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop-img@1x-6.jpg 1x,
+                        ./images/portfolio/desktop-img@2x-6.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet-img-@1x-6.jpg 1x,
+                        ./images/portfolio/tablet-img@2x-6.jpg  2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile-img-@1x-6.jpg 1x,
+                        ./images/portfolio/mobile-img@2x-6.jpg  2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpg"
+                    />
+                    <img
+                      class="employees-list-img"
+                      src="./images/portfolio/mobile-img-@1x-6.jpg"
+                      alt="Inspiration has no Borders"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="employees-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -266,13 +422,39 @@
             <li class="employees-list-ptojekt">
               <a class="hover-link link" href="#"
                 ><div class="employees-deskr">
-                  <img
-                    class="employees-list-img"
-                    src="./images/portfolio/editon-limited.jpg"
-                    alt="Издание Limited Edition"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop-img@1x-7.jpg 1x,
+                        ./images/portfolio/desktop-img@2x-7.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet-img-@1x-7.jpg 1x,
+                        ./images/portfolio/tablet-img@2x-7.jpg  2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile-img-@1x-7.jpg 1x,
+                        ./images/portfolio/mobile-img@2x-7.jpg  2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpg"
+                    />
+                    <img
+                      class="employees-list-img"
+                      src="./images/portfolio/mobile-img-@1x-7.jpg"
+                      alt="Издание Limited Edition"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="employees-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -288,13 +470,39 @@
             <li class="employees-list-ptojekt">
               <a class="hover-link link" href="#"
                 ><div class="employees-deskr">
-                  <img
-                    class="employees-list-img"
-                    src="./images/portfolio/project-lab.jpg"
-                    alt="Проект LAB"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop-img@1x-8.jpg 1x,
+                        ./images/portfolio/desktop-img@2x-8.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet-img-@1x-8.jpg 1x,
+                        ./images/portfolio/tablet-img@2x-8.jpg  2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile-img-@1x-8.jpg 1x,
+                        ./images/portfolio/mobile-img@2x-8.jpg  2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpg"
+                    />
+                    <img
+                      class="employees-list-img"
+                      src="./images/portfolio/mobile-img-@1x-8.jpg"
+                      alt="Проект LAB"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="employees-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -310,13 +518,39 @@
             <li class="employees-list-ptojekt">
               <a class="hover-link link" href="#"
                 ><div class="employees-deskr">
-                  <img
-                    class="employees-list-img"
-                    src="./images/portfolio/growing-business.jpg"
-                    alt="Growing Business"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop-img@1x-9.jpg 1x,
+                        ./images/portfolio/desktop-img@2x-9.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet-img-@1x-9.jpg 1x,
+                        ./images/portfolio/tablet-img@2x-9.jpg  2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile-img-@1x-9.jpg 1x,
+                        ./images/portfolio/mobile-img@2x-9.jpg  2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpg"
+                    />
+                    <img
+                      class="employees-list-img"
+                      src="./images/portfolio/mobile-img-@1x-9.jpg"
+                      alt="Growing Business"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="employees-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
